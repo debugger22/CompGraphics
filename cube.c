@@ -1,5 +1,9 @@
-#include <GL/glut.h>
+/*
+* This file demonstrates rendering of a wired cube.
+*/
+
 #include <stdlib.h>
+#include <GL/glut.h>
 
 void init(void)
 {

@@ -17,7 +17,7 @@ void display(void){
     glColor3f(1.0, 1.0, 1.0);  // Setting fill color
     glPushMatrix();
         glTranslated(-1.0, -1.0, -4.0);
-        glutWireTetrahedron();
+        glutWireTetrahedron();  // Drawing wired tetrahedron
     glPopMatrix();
     glutSwapBuffers();
 }
@@ -33,10 +33,9 @@ int main(int argc, char *argv[]){
     glutDisplayFunc(display);
     glClearColor (0.9, 0.3, 0.1, 0.0);  // Setting background color
     glEnable(GL_CULL_FACE);
-    //glCullFace(GL_BACK);
+    glCullFace(GL_BACK);
     glEnable(GL_DEPTH_TEST);
-    //glDepthFunc(GL_LESS);
-
+    glDepthFunc(GL_LESS);
     glutMainLoop();
     return 0;
 }

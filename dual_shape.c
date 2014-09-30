@@ -21,37 +21,37 @@ int DRAW_CYLINDER = GL_FALSE;  // Shape identifier boolean
 
 void mKeyboardFunc(unsigned char key, int x, int y){
    switch (key) {
-   case 'w':
-      WireFrameOn = 1 - WireFrameOn;
-      glutPostRedisplay();
-      break;
+      case 'w':
+         WireFrameOn = 1 - WireFrameOn;
+         glutPostRedisplay();
+         break;
 
-   case 'c':
-      DRAW_CYLINDER = GL_TRUE;
-      glutPostRedisplay();
-      break;
+      case 'c':
+         DRAW_CYLINDER = GL_TRUE;
+         glutPostRedisplay();
+         break;
 
-   case 's':
-      DRAW_CYLINDER = GL_FALSE;
-      glutPostRedisplay();
-      break;
+      case 's':
+         DRAW_CYLINDER = GL_FALSE;
+         glutPostRedisplay();
+         break;
 
-   case '+':
-      radius += 0.1;
-      radius_cyl += 0.1;
-      printf("%f", radius);
-      glutPostRedisplay();
-      break;
+      case '+':
+         radius += 0.1;
+         radius_cyl += 0.1;
+         printf("%f", radius);
+         glutPostRedisplay();
+         break;
 
-   case '-':
-      radius -= 0.1;
-      radius_cyl -= 0.1;
-      glutPostRedisplay();
-      break;
+      case '-':
+         radius -= 0.1;
+         radius_cyl -= 0.1;
+         glutPostRedisplay();
+         break;
 
-   case 27:
-      exit(0);
-   }
+      case 27:
+         exit(0);
+      }
 }
 
 void init(void){
