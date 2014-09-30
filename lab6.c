@@ -19,12 +19,6 @@ void mKeyboardFunc( unsigned char key, int x, int y ){
    case 'c':
       DRAW_CYLINDER = GL_TRUE;
       glutPostRedisplay();
-      /*
-      AngleStepSize *= 1.5;
-      if (AngleStepSize>AngleStepMax ) {
-         AngleStepSize = AngleStepMax;
-      }
-      */
       break;
    case 's':
       DRAW_CYLINDER = GL_FALSE;
@@ -47,7 +41,7 @@ void mKeyboardFunc( unsigned char key, int x, int y ){
 }
 
 void init(void){
-   glClearColor (0.0, 0.0, 0.0, 0.0);  // Setting background color
+   glClearColor (0.9, 0.1, 0.0, 0.0);  // Setting background color
    glShadeModel (GL_FLAT);
 }
 
