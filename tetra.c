@@ -1,3 +1,7 @@
+/*
+* This file demonstrates rendering of a wired tetrahedron.
+*/
+
 #include <GL/glut.h>
 #include <stdlib.h>
 
