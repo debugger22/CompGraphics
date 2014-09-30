@@ -39,7 +39,6 @@ void mKeyboardFunc(unsigned char key, int x, int y){
       case '+':
          radius += 0.1;
          radius_cyl += 0.1;
-         printf("%f", radius);
          glutPostRedisplay();
          break;
 
