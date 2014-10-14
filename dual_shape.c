@@ -104,7 +104,7 @@ void mReshape (int w, int h){
 
 int main(int argc, char** argv){
    glutInit(&argc, argv);
-   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+   glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
    glutInitWindowSize (650, 650);
    glutInitWindowPosition (400, 30);
    glutCreateWindow ("Draw dual shape");
